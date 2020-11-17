@@ -3,4 +3,5 @@
 <ul>
   <li>Lab 1: Message Passing Interface</li>
   <li>Lab 2: Data serialisation and Deserialisation</li>
+  <li>Lab 3: SOAP web service in php</li>
 </ul>
