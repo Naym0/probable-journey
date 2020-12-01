@@ -29,7 +29,7 @@
         <title> SOAP Assignment </title>
         <link rel="shortcut icon" type="image/png" href="images/geo.png">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">	
-
+        <button onclick="document.location='index.php'">Back to Registration</button>
         <style>
             table {
             font-family: arial, sans-serif;
@@ -46,6 +46,11 @@
             tr:nth-child(even) {
             background-color: #dddddd;
             }
+
+            body {
+            background-image: url('images/bg.jpg');
+
+</style>
         </style>
     </head>
     <br><br>

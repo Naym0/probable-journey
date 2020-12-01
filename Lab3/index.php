@@ -4,7 +4,14 @@
         <title> SOAP Assignment </title>
         <link rel="shortcut icon" type="image/png" href="images/geo.png">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">	
+        <button onclick="document.location='client.php'">Search Student</button>
     </head>
+<style>
+body {
+  background-image: url('images/bg.jpg');
+}
+</style>
+
     <br><br>
 
     <body>
