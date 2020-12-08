@@ -8,10 +8,11 @@
 		$email = $mysqli->real_escape_string($_REQUEST['email']);
 		$number = $mysqli->real_escape_string($_REQUEST['number']);
 		$address = $mysqli->real_escape_string($_REQUEST['address']);
+		$course = $mysqli->real_escape_string($_REQUEST['course']);
 		$points = $mysqli->real_escape_string($_REQUEST['points']);
 
 	// attempt insert query execution
-	$sql = "INSERT INTO students (id, name, email, number, address, points) VALUES ('$id', '$name', '$email', '$number', '$address', '$points')";
+	$sql = "INSERT INTO students (id, name, email, number, address, course, points) VALUES ('$id', '$name', '$email', '$number', '$address', '$course', '$points')";
 
 	if($mysqli->query($sql) === true){
 		echo "<script language='javascript'>

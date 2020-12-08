@@ -8,9 +8,10 @@
         curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
         $response = curl_exec($client);
         $result = json_decode($response);
+        // echo $response;
     }
     else{
-        echo "No Such record";
+        // echo "No Such record";
     }
 
 ?>
@@ -58,6 +59,10 @@
                 <input type="hidden" name="search"/>
                 <button class="button"> Search </button><br><br><br><br><br>
 
+                <?php if (!empty($result)) : ?>
+                    <p><? echo $result ?></p>
+                <?php endif; ?>
+
                 <?php if (!empty($error)) : ?>
                     <div class="mb-5">
                     <p class="text-red-600">
@@ -66,7 +71,8 @@
                     </div>
                 <?php endif; ?>
 
-                <?php if (!empty($result)) : ?>
+                <?php if (!empty($response)) : ?>
+                    <?echo $response?>
                     <table>
                         <tr>
                             <th>ID</th>
@@ -74,6 +80,7 @@
                             <th>EMAIL</th>
                             <th>NUMBER</th>
                             <th>ADDRESS</th>
+                            <th>COURSE</th>
                             <th>POINTS</th>
                         </tr>
                         <tr>
@@ -82,6 +89,7 @@
                             <td><?= $result->email ?></td>
                             <td><?= $result->number ?></td>
                             <td><?= $result->address ?></td>
+                            <td><?= $result->course ?></td>
                             <td><?= $result->points ?></td>
                         </tr>
                     </table>

@@ -40,6 +40,10 @@
                 Address:<br>
                 <input type= "text" name="address" required>
                 <br><br>
+
+                Course:<br>
+                <input type= "text" name="course" required>
+                <br><br>
                 
                 Points:<br>
                 <input type= "text" name="points" required>

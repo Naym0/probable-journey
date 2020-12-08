@@ -14,8 +14,9 @@
             $email = $row['email'];
             $number = $row['number'];
             $address = $row['address'];
+            $course = $row['course'];
             $points = $row['points'];
-            response($id,$name,$email,$number,$address,$points);
+            response($id,$name,$email,$number,$address,$course,$points);
             $mysqli->close();;
         }else{
             response(NULL, NULL, 200,"No Record Found");
@@ -25,12 +26,13 @@
         response(NULL, NULL, 400,"Invalid Request");
     }
     
-    function response($id,$name,$email,$number,$address,$points){
+    function response($id,$name,$email,$number,$address,$course,$points){
         $response['id'] = $id;
         $response['name'] = $name;
         $response['email'] = $email;
         $response['number'] = $number;
         $response['address'] = $address;
+        $response['course'] = $course;
         $response['points'] = $points;
         
         $json_response = json_encode($response);

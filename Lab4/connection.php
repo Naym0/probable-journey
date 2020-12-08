@@ -1,5 +1,5 @@
 <?php 
-    $mysqli = new mysqli("localhost", "root", "Admin", "Student");
+    $mysqli = new mysqli("localhost", "root", "Admin", "rest");
 
     // Check connection
     if($mysqli === false){
